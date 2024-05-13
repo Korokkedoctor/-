@@ -4,6 +4,7 @@
 using namespace std;
 const char c[27]={'d','j','k','z','u','x','c','m','l','i','w','b','v','n','o','p','q','a','r','s','g','h','f','t','y','e',' '};
 void encryption(ifstream& fin, ofstream& fout);//“&”——引用 
+void decryption(ifstream& fin, ofstream& fout);
 int main()
 {
 	ifstream fin;//读取输入文件流对象,用于读取数据，以流的方式
@@ -11,7 +12,8 @@ int main()
 	ofstream fout;//读取输出文件流对象，用于输出
 	//加密后的数据
 	//ifstream和ofstrean是fsteam定义的某种变量类型 
-	
+	ifstream enc;
+	ofstream dec;
 	fin.open("file1_1.in");//
 	if(fin.fail()) //fail函数常用来检查文件流状态，返回一个bool类型的值
 	{
@@ -22,10 +24,26 @@ int main()
 	if(fout.fail())
 	{
 		cout <<"File open error!(output)"<< endl;
-	} 
+	}
 	encryption(fin,fout);
 	fin.close();
 	fout.close();
+	
+	enc.open("file1_1.text");
+	if(enc.fail())
+	{
+		cout <<"File open error!(encryp)"<< endl;
+	}
+	dec.open("file1_1.dec");
+	if(dec.fail())
+	{
+		cout <<"File open error!(decryp)"<< endl;
+	}
+	
+	decryption(enc,dec);
+	
+	enc.close();
+	dec.close();
 	return 0; 
 }
 void encryption(ifstream& fin,ofstream& fout)
@@ -47,6 +65,29 @@ void encryption(ifstream& fin,ofstream& fout)
 		}
 	 } 
  } 
- 
+ void decryption(ifstream& enc,ofstream& dec)
+ {
+ 	char ch;
+ 	char chout;
+ 	while(enc.get(ch))
+ 	{
+ 		for(int i = 0;i<=26;i++)
+ 		{
+ 			if(ch==c[i])
+ 			{
+ 				if(i == 26)
+ 				{
+ 					dec<<' ';	
+				}
+				else
+				{
+					chout=char('a'+i);
+					dec<<chout;	
+				} 
+ 				
+			}
+		}
+	}
+ }
  
 
