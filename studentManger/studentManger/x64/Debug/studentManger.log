@@ -1,0 +1,9 @@
+﻿  StudentManager.c
+E:\工作区\code\c++\studentManger\studentManger\StudentManager.c(63,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\工作区\code\c++\studentManger\studentManger\StudentManager.c(65,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\工作区\code\c++\studentManger\studentManger\StudentManager.c(67,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\工作区\code\c++\studentManger\studentManger\StudentManager.c(69,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\工作区\code\c++\studentManger\studentManger\StudentManager.c(71,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\工作区\code\c++\studentManger\studentManger\StudentManager.c(252,3): warning C4013: “strcpy”未定义；假设外部返回 int
+E:\工作区\code\c++\studentManger\studentManger\StudentManager.c(240,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  studentManger.vcxproj -> E:\工作区\code\c++\studentManger\x64\Debug\studentManager.exe
