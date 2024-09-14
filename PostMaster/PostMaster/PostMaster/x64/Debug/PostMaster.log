@@ -1,0 +1,3 @@
+﻿  Driver.cpp
+E:\PostMaster\PostMaster\PostMaster\Driver.cpp(76,14): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  PostMaster.vcxproj -> E:\PostMaster\PostMaster\x64\Debug\PostMaster.exe
